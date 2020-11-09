@@ -1,4 +1,4 @@
-	Obraz Docker dla opracowanej aplikacji mozna zbudowac bez klonowania repo na system lokalny, jesli uzytkownik pobierze na lokalny system obraz. 
+	Obraz Docker dla opracowanej aplikacji mozna zbudowac TYLKO z kodem.
 	
 	Obraz dla aplikacji znajdujacej sie w repozytorium znajduje sie w pliku obraz.tar.gz. W celu uruchomienia go, nalezy pobrak plik na lokalny system, rozpakowac w dowolnym katalogu oraz uruchomic go za pomoca nastepujacej komendy:
 	docker run --rm -it -p 8888:80 projektpwcho
