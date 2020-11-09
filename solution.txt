@@ -1,0 +1,20 @@
+Niniejsza instrukcja zawiera kroki, ktore nalezy wykonac, aby stworzyc i uruchomic obraz na podstawie aplikacji zawartej w pliku app.tar.gz:
+
+1. Otworzyc terminal.
+
+2. Rozpakowac plik app.tar.gz za pomoca nastepujacej komendy: 
+	tar -xf app.tar.gz
+	
+3. Plik Dockerfile i plik index.html umiescic w jednym katalogu, dowolnym. W terminalu przejsc do katalogu, w ktorym umieszczone zostaly wspomniane pliki. 
+
+4. Zbudowac obraz za pomoca nastepujacej komendy:
+	docker build -t projekt .
+
+5. Uruchomic obraz za pomoca komendy
+	docker run --rm -it -p 8888:80 projekt	
+
+6. Otworzyc przegladarke internetowa.
+
+7. W pasku adresu wpisac http://localhost:8888
+
+W tym momencie powinna sie uruchomic aplikacja internetowa wyswietlajaca date i czas dla trzech miast na swiecie: Lublina, Nowego Jorku i Sydney.
